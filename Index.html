@@ -1,1 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advance Happy Birthday Bujjodaaaa 💕</title>
 
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe4ec, #fff7fa);
+    color: #6b3045;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 60px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 430px;
+    background: rgba(255,255,255,0.78);
+    border-radius: 30px;
+    padding: 35px 24px;
+    box-shadow: 0 10px 35px rgba(150,70,100,0.15);
+    backdrop-filter: blur(10px);
+}
+
+.heart {
+    font-size: 55px;
+    animation: heartbeat 1.4s infinite;
+}
+
+@keyframes heartbeat {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+h1 {
+    font-size: 30px;
+    margin: 20px 0 12px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.small {
+    font-size: 15px;
+    color: #9a6174;
+}
+
+button {
+    border: none;
+    background: #d95b82;
+    color: white;
+    padding: 15px 27px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(180,70,100,0.25);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    text-align: left;
+    background: #fff7fa;
+    border-radius: 22px;
+    padding: 22px;
+    margin-top: 20px;
+    border: 1px solid #f4cad7;
+}
+
+.message p {
+    white-space: pre-line;
+}
+
+.heart-float {
+    position: fixed;
+    bottom: -30px;
+    font-size: 20px;
+    animation: floatUp 5s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #a66b7e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+    <div class="card">
+
+        <div class="heart">💗</div>
+
+        <h1>Advance Happy Birthdayyyyy</h1>
+
+        <h2>Bujjodaaaa...💕💋</h2>
+
+        <p class="small">
+            I made u a little surprise for uhh 🫶🏻💕
+        </p>
+
+        <button onclick="openSurprise()">
+            Open Your Surprise 💌
+        </button>
+
+        <div id="surprise" class="hidden">
+
+            <h2>🥹 One Little Surprise For You 🫶🏻</h2>
+
+            <p>
+                Your birthday is still coming...
+                but I couldn't wait to wish you. 🫣💕
+            </p>
+
+            <p>
+                So here's a little something made especially for you. 🌙✨
+            </p>
+
+            <div class="message">
+
+                <p>
+Heyyyyy Bujjodaaaa...💕💋
+I wish uhhh  Advance Happy Birthdayyyyy🫠💗
+
+Still there is 25 days for your bdayy but I can't wait to wish uh the special day of ur`s.. 🫣
+
+I am so happyyy actually it was the second birthdayy of mine where u will be loved the most of the moon 🌙 the day which u will cherishinggg and having a laugh throughout the day 🤌🏻😘
+
+I was so so lucky to have uhh
+
+The love u show is like an ocean which i cant even swim😭🌊
+
+The care which uh show is the wonderful love that I can't even resist to stop loving by uhhh🙂‍↕️😘
+
+I will kbe loving uh now , ever, forever that love can not be expressed in words because it is not being end 😭🤌🏻💕
+
+Once again Advance Happy Birthdayyyyy myyy lovee💋🫠🫶🏻
+
+I love uhh so so so so muchhhh bujjodaaaaaaa❤️🧿🫂
+
+From ur Kannamaaa🫠💋❤️
+                </p>
+
+            </div>
+
+            <button onclick="moreLove()">
+                There's More... 🥺💕
+            </button>
+
+            <div id="final" class="hidden">
+
+                <h2>🎂💗 Advance Happy Birthday 💗🎂</h2>
+
+                <p>
+                    Myyy lovee, I hope your special day
+                    is filled with happiness, smiles,
+                    love and everything you deserve. 🫶🏻
+                </p>
+
+                <p>
+                    I love uhh so so so so muchhhh ❤️
+                </p>
+
+                <h2>🫂💋🧿</h2>
+
+                <p>
+                    From ur Kannamaaa 🫠💋❤️
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Made with love 🫶🏻💕
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+function openSurprise() {
+    document.getElementById("surprise").classList.remove("hidden");
+    createHearts();
+}
+
+function moreLove() {
+    document.getElementById("final").classList.remove("hidden");
+    createHearts();
+    createHearts();
+}
+
+function createHearts() {
+
+    for (let i = 0; i < 12; i++) {
+
+        let heart = document.createElement("div");
+
+        heart.className = "heart-float";
+
+        heart.innerHTML =
+            ["💕","💗","💖","❤️","🫶🏻","✨"][Math.floor(Math.random()*6)];
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.animationDuration =
+            (3 + Math.random() * 3) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 6000);
+    }
+}
+
+</script>
+
+</body>
+  </html>

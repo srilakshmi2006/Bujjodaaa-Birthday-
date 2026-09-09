@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Bujjodaaa ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="birthday-hearts">
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+    </div>
+
+    <!-- Sparkles -->
+    <div class="birthday-sparkles">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+    </div>
+
+
+    <!-- Main Birthday Page -->
+    <main class="birthday-page">
+
+        <div class="birthday-card">
+
+            <!-- Small heading -->
+            <p class="birthday-top">
+                Finally... the day is here ✨
+            </p>
+
+
+            <!-- Cake -->
+            <div class="cake">
+
+                <div class="candle">
+                    <div class="flame">🔥</div>
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-body">
+                    <span>♡</span>
+                    <span>♡</span>
+                    <span>♡</span>
+                </div>
+
+            </div>
+
+
+            <!-- Birthday Reveal -->
+            <p class="birthday-label">
+                HAPPY BIRTHDAY
+            </p>
+
+            <h1>
+                BUJJODAAA
+                <span>❤️</span>
+            </h1>
+
+
+            <div class="birthday-line"></div>
+
+
+            <!-- Small Birthday Wish -->
+            <p class="birthday-message">
+                Happy Birthdayyy to the most special person
+                in my world. 🥹❤️
+            </p>
+
+            <p class="birthday-message small">
+                Today is your day... but I have a little
+                something more to tell you. 💌
+            </p>
+
+
+            <!-- Next Page -->
+            <button class="more-button" onclick="goToMessage()">
+                A Little Something From Me
+                <span>❤️</span>
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- Page Navigation -->
+    <script>
+
+        function goToMessage() {
+
+            // Smooth fade-out
+            document.body.classList.add("leaving");
+
+            // Go to Page 4
+            setTimeout(function () {
+
+                window.location.href = "page4.html";
+
+            }, 700);
+
+        }
+
+    </script>
+
+</body>
+
+</html>

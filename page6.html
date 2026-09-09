@@ -1,0 +1,235 @@
+@'
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Read My Heart 💌</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="letter-hearts">
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+    </div>
+
+    <!-- Sparkles -->
+    <div class="letter-sparkles">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+    </div>
+
+
+    <main class="letter-page">
+
+        <div class="letter-container">
+
+            <p class="letter-small">
+                A little more from my heart... 🥹
+            </p>
+
+            <h1>
+                To My<br>
+                Nannaaa <span>❤️</span>
+            </h1>
+
+            <div class="letter-line"></div>
+
+
+            <!-- ENVELOPE -->
+            <div class="envelope-area">
+
+                <div class="envelope" id="envelope">
+
+                    <div class="envelope-back"></div>
+
+                    <div class="letter-paper">
+
+                        <div class="letter-content">
+
+                            <p>Nannaaa... 🥹❤️</p>
+
+                            <p>
+                                Sometimes I don't know how to explain
+                                what you mean to me.
+                            </p>
+
+                            <p>
+                                But if I had to choose one person to keep
+                                beside me through all the little moments
+                                of life...
+                            </p>
+
+                            <p class="special-line">
+                                I'd choose you. ❤️
+                            </p>
+
+                            <p>
+                                I want to see you happy.
+                                I want to see you achieve everything
+                                you dream about.
+                            </p>
+
+                            <p>
+                                And whenever life gets difficult,
+                                I want you to remember that you never
+                                have to face it alone. 🫂❤️
+                            </p>
+
+                            <p>
+                                Thank you for being you.
+                                Thank you for every little effort,
+                                every smile, every moment.
+                            </p>
+
+                            <p class="special-line">
+                                You are one of the most beautiful
+                                parts of my life. 🥹💗
+                            </p>
+
+                            <p>
+                                And no matter how many birthdays
+                                come and go...
+                            </p>
+
+                            <p>
+                                I hope I get to wish you happy birthday
+                                every single year. ♾️❤️
+                            </p>
+
+                            <p class="love-text">
+                                Love you forever, Nannaaa. 💗
+                            </p>
+
+                            <p class="signature">
+                                — Your Kannamaaa 🤍🫶🏻
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="envelope-front"></div>
+
+                    <div class="envelope-heart">
+                        💌
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="open-hint">
+                Tap the envelope to open my heart... 💗
+            </p>
+
+
+            <!-- FINAL LOVE MESSAGE -->
+
+            <div class="final-love">
+
+                <p class="final-intro">
+                    And if there is one thing
+                    I want you to remember... 🥹❤️
+                </p>
+
+                <h2>
+                    I LOVE YOUUU<br>
+                    NANNAAA 🫶🏻💗
+                </h2>
+
+                <p>
+                    More than these little words
+                    can ever explain...
+                </p>
+
+                <p>
+                    More than I know how to say sometimes... 🥹
+                </p>
+
+                <p class="forever-line">
+                    I'll choose you, again and again,
+                    <br>
+                    in every little moment,
+                    <br>
+                    in every silly fight,
+                    <br>
+                    in every happy day,
+                    <br>
+                    and through every difficult one. 🫂❤️
+                </p>
+
+                <p class="heart-line">
+                    You'll always have a special place
+                    in my heart. ♾️
+                </p>
+
+                <p class="forever-yours">
+                    Forever yours,<br>
+                    <strong>Your Kannamaaa 🤍🫶🏻</strong>
+                </p>
+
+                <p class="moon-love">
+                    I love you to the moon,
+                    back to you, and beyond... 🌙💗♾️
+                </p>
+
+            </div>
+
+
+            <!-- NEXT PAGE -->
+
+            <button onclick="goToFinal()">
+                One Last Thing... ❤️
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        const envelope = document.getElementById("envelope");
+
+        envelope.addEventListener("click", function () {
+
+            envelope.classList.toggle("open");
+
+        });
+
+
+        function goToFinal() {
+
+            document.body.classList.add("leaving");
+
+            setTimeout(function () {
+
+                window.location.href = "page7.html";
+
+            }, 700);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+'@ | Set-Content page6.html

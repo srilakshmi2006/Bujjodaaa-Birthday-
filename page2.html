@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wait... 🫣❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="question-page">
+
+        <div class="question-hearts">
+            <span>♡</span>
+            <span>♥</span>
+            <span>♡</span>
+            <span>♥</span>
+        </div>
+
+        <div class="question-card">
+
+            <div class="tiny-heart">
+                ♡
+            </div>
+
+            <p class="question-small">
+                Before we continue...
+            </p>
+
+            <h1>
+                Wait... 🫣
+            </h1>
+
+            <div class="question-line"></div>
+
+            <p class="question-text">
+                I have one tiny question for you...
+            </p>
+
+            <h2>
+                Do you know how<br>
+                special you are to me? ❤️
+            </h2>
+
+            <p class="question-hint">
+                Choose honestly... 👀
+            </p>
+
+            <div class="answer-buttons">
+
+                <button onclick="nextPage()">
+                    YES ❤️
+                </button>
+
+                <button onclick="nextPage()">
+                    OF COURSE 😌
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+        function nextPage() {
+
+            document.body.classList.add("leaving");
+
+            setTimeout(() => {
+                window.location.href = "page3.html";
+            }, 700);
+
+        }
+    </script>
+
+</body>
+
+</html>
